@@ -1,0 +1,525 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Allura&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px;
+  background-color: #fff;
+  min-height: 10vh;
+}
+
+.navbar .navLogo h3 {
+  font-family: "Allura", cursive;
+  font-size: 3rem;
+  color: #d1ae32;
+}
+
+.navbar .navRight .navLinks {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2em;
+}
+
+.navbar .navRight .navLinks a {
+  color: #000;
+  text-decoration: none;
+}
+
+.navbar .navRight .navLinks a:hover {
+  color: #146eb4;
+}
+
+.mobileNavbar {
+  display: none;
+}
+
+main section .heading {
+  font-size: 3rem;
+}
+
+main section .smallHeading {
+  font-size: 2rem;
+}
+
+main section.section1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 90vh;
+  margin: 0 10vw;
+}
+
+main section.section1 .left {
+  margin-right: 3em;
+}
+
+main section.section1 .left .text {
+  margin-top: 0.7em;
+  color: #616161;
+  font-size: 0.95rem;
+}
+
+main section.section1 .right img {
+  height: 50vh;
+}
+
+main section.section2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #146eb4;
+  padding: 50px;
+}
+
+main section.section2 .featuresList {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main section.section2 .featuresList .singleFeature {
+  color: #fff;
+}
+
+main section.section2 .featuresList .singleFeature i {
+  font-size: 3rem;
+}
+
+main section.section2 .featuresList .singleFeature .numbers {
+  font-size: 3rem;
+  margin-top: 0.2em;
+}
+
+main section.section2 .featuresList .singleFeature .title {
+  font-size: 1.1rem;
+}
+
+main section.section3 {
+  background-color: #fef8f4;
+  padding: 50px 10vw;
+}
+
+main section.section3 .specsList {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 3em;
+  grid-row-gap: 4em;
+  margin: 4em 0 0;
+}
+
+main section.section3 .specsList .singleSpec i {
+  font-size: 2.5rem;
+  color: #146eb4;
+}
+
+main section.section3 .specsList .singleSpec .title {
+  margin-top: 1em;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+main section.section3 .specsList .singleSpec .text {
+  margin-top: 0.7em;
+  color: #616161;
+  font-size: 0.9rem;
+}
+
+main section.section4 {
+  background-color: #ee741f;
+  color: #fff;
+  padding: 50px 10vw;
+}
+
+main section.section4 .heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+main section.section4 .text {
+  font-size: 0.9rem;
+}
+
+main section.section4 .buttons {
+  margin-top: 1.5em;
+}
+
+main section.section4 .buttons button {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 10px 45px;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+main section.section4 .buttons button:hover {
+  background-color: #fff;
+  color: #ee741f;
+}
+
+main section.section4 .buttons button:not(:first-child) {
+  margin-left: 1em;
+}
+
+main section.section5 {
+  padding: 50px 10vw;
+}
+
+main section.section5 form {
+  margin-top: 2em;
+}
+
+main section.section5 form .inputGroup {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  grid-gap: 2em;
+}
+
+main section.section5 form .inputGroup.twoInputs {
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+main section.section5 form .inputGroup input,
+main section.section5 form .inputGroup textarea {
+  padding: 10px;
+  border: 1px solid #616161;
+  border-radius: 3px;
+  outline: none;
+}
+
+main section.section5 form .inputGroup input:focus,
+main section.section5 form .inputGroup textarea:focus {
+  border: 1px solid #146eb4;
+}
+
+main section.section5 form .inputGroup button {
+  background-color: #146eb4;
+  color: #fff;
+  padding: 10px 45px;
+  border: 1px solid #146eb4;
+  width: 50%;
+  margin: auto;
+  outline: none;
+  cursor: pointer;
+}
+
+main section.section5 form .inputGroup:not(:first-child) {
+  margin-top: 2em;
+}
+
+main section.flex-rev {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.footer {
+  background-color: #fef8f4;
+  padding: 70px 70px 20px;
+  color: #616161;
+}
+
+.footer .footerTop {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.footer .footerTop h3 {
+  font-family: "Allura", cursive;
+  font-size: 3rem;
+  color: #d1ae32;
+}
+
+.footer .footerTop div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .footerTop div a {
+  color: #616161;
+  text-decoration: none;
+}
+
+.footer .footerTop div a:hover {
+  color: #146eb4;
+}
+
+.footer .footerTop div a:not(:first-child) {
+  margin-top: 1em;
+}
+
+.footer .footerBottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 3em;
+  font-size: 0.9rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20vh 0 0;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: -100vw;
+    z-index: 5;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+  }
+  .navbar .navRight {
+    margin-top: 20vh;
+  }
+  .navbar .navRight .navLinks {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2em;
+    text-align: center;
+  }
+  .navbar .navRight .navLinks a {
+    color: #000;
+    text-decoration: none;
+  }
+  .navbar .navRight .navLinks a:hover {
+    color: #146eb4;
+  }
+  .navbar.open {
+    left: 0;
+  }
+  .mobileNavbar {
+    position: relative;
+    display: block;
+    height: 10vh;
+    padding: 25px;
+    z-index: 7;
+  }
+  .mobileNavbar i {
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+  main section .heading {
+    font-size: 2rem;
+  }
+  main section .smallHeading {
+    font-size: 1.5rem;
+  }
+  main section.section1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin: 0 20px;
+  }
+  main section.section1 .left {
+    margin: 2em 0 0;
+  }
+  main section.section1 .left .text {
+    margin-top: 1em;
+  }
+  main section.section1 .right img {
+    width: 100%;
+    height: auto;
+  }
+  main section.section2 {
+    padding: 50px 20px;
+  }
+  main section.section2 .featuresList {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2em;
+    grid-row-gap: 4em;
+  }
+  main section.section2 .featuresList .singleFeature i {
+    font-size: 2.2rem;
+  }
+  main section.section2 .featuresList .singleFeature .numbers {
+    font-size: 2.3rem;
+    margin-top: 0.2em;
+  }
+  main section.section2 .featuresList .singleFeature .title {
+    font-size: 1.1rem;
+  }
+  main section.section2 .featuresList .singleFeature:not(:first-child) {
+    margin-top: 0;
+  }
+  main section.section3 {
+    background-color: #fef8f4;
+    padding: 50px 20px;
+  }
+  main section.section3 .specsList {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 3.5em;
+    margin: 3.5em 0 0;
+  }
+  main section.section3 .specsList .singleSpec i {
+    font-size: 2rem;
+  }
+  main section.section3 .specsList .singleSpec .title {
+    margin-top: 0.7em;
+    font-size: 1.3rem;
+  }
+  main section.section3 .specsList .singleSpec .text {
+    margin-top: 0.5em;
+  }
+  main section.section4 {
+    padding: 50px 20px;
+  }
+  main section.section4 .heading {
+    font-size: 2rem;
+  }
+  main section.section4 .text {
+    margin-top: 0.5em;
+  }
+  main section.section4 .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 1.5em;
+  }
+  main section.section4 .buttons button {
+    font-size: 0.9rem;
+  }
+  main section.section4 .buttons button:not(:first-child) {
+    margin: 1em 0 0 0;
+  }
+  main section.section5 {
+    padding: 50px 20px 30px;
+  }
+  main section.section5 form {
+    margin-top: 1em;
+  }
+  main section.section5 form .inputGroup {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1em;
+  }
+  main section.section5 form .inputGroup.twoInputs {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  main section.section5 form .inputGroup button {
+    width: 100%;
+  }
+  main section.section5 form .inputGroup:not(:first-child) {
+    margin-top: 1em;
+  }
+  .footer {
+    padding: 70px 20px 20px;
+  }
+  .footer .footerTop {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+    grid-row-gap: 2em;
+  }
+  .footer .footerTop h3 {
+    font-size: 2.3rem;
+  }
+  .footer .footerTop div a {
+    font-size: 0.9em;
+  }
+  .footer .footerTop div a:hover {
+    color: #146eb4;
+  }
+  .footer .footerTop div a:not(:first-child) {
+    margin-top: 0.7em;
+  }
+  .footer .footerBottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer .footerBottom div:last-child {
+    margin-top: 1em;
+  }
+}
+/*# sourceMappingURL=index.css.map */

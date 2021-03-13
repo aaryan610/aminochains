@@ -1,0 +1,513 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Allura&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  background-color: #fff;
+  min-height: 10vh;
+
+  .navLogo {
+    h3 {
+      font-family: "Allura", cursive;
+      font-size: 3rem;
+      color: #d1ae32;
+    }
+  }
+
+  .navRight {
+    .navLinks {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 2em;
+
+      a {
+        color: #000;
+        text-decoration: none;
+
+        &:hover {
+          color: #146eb4;
+        }
+      }
+    }
+  }
+}
+
+.mobileNavbar {
+  display: none;
+}
+
+main {
+  section {
+    .heading {
+      font-size: 3rem;
+    }
+
+    .smallHeading {
+      font-size: 2rem;
+    }
+
+    &.section1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 90vh;
+      margin: 0 10vw;
+
+      .left {
+        margin-right: 3em;
+
+        .text {
+          margin-top: 0.7em;
+          color: #616161;
+          font-size: 0.95rem;
+        }
+      }
+
+      .right {
+        img {
+          height: 50vh;
+        }
+      }
+    }
+
+    &.section2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #146eb4;
+      padding: 50px;
+
+      .featuresList {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+
+        .singleFeature {
+          color: #fff;
+
+          i {
+            font-size: 3rem;
+          }
+
+          .numbers {
+            font-size: 3rem;
+            margin-top: 0.2em;
+          }
+
+          .title {
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+
+    &.section3 {
+      background-color: #fef8f4;
+      padding: 50px 10vw;
+
+      .specsList {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 3em;
+        grid-row-gap: 4em;
+        margin: 4em 0 0;
+
+        .singleSpec {
+          i {
+            font-size: 2.5rem;
+            color: #146eb4;
+          }
+
+          .title {
+            margin-top: 1em;
+            font-weight: 600;
+            font-size: 1.5rem;
+          }
+
+          .text {
+            margin-top: 0.7em;
+            color: #616161;
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+
+    &.section4 {
+      background-color: #ee741f;
+      color: #fff;
+      padding: 50px 10vw;
+
+      .heading {
+        font-size: 2.5rem;
+        font-weight: 600;
+      }
+
+      .text {
+        font-size: 0.9rem;
+      }
+
+      .buttons {
+        margin-top: 1.5em;
+
+        button {
+          background: transparent;
+          border: 2px solid #fff;
+          color: #fff;
+          font-size: 0.9rem;
+          font-weight: 600;
+          padding: 10px 45px;
+          border-radius: 3px;
+          outline: none;
+          cursor: pointer;
+          transition: 0.3s all ease;
+
+          &:hover {
+            background-color: #fff;
+            color: #ee741f;
+          }
+
+          &:not(:first-child) {
+            margin-left: 1em;
+          }
+        }
+      }
+    }
+
+    &.section5 {
+      padding: 50px 10vw;
+
+      form {
+        margin-top: 2em;
+
+        .inputGroup {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          grid-gap: 2em;
+
+          &.twoInputs {
+            grid-template-columns: repeat(2, 1fr);
+          }
+
+          input,
+          textarea {
+            padding: 10px;
+            border: 1px solid #616161;
+            border-radius: 3px;
+            outline: none;
+
+            &:focus {
+              border: 1px solid #146eb4;
+            }
+          }
+
+          button {
+            background-color: #146eb4;
+            color: #fff;
+            padding: 10px 45px;
+            border: 1px solid #146eb4;
+            width: 50%;
+            margin: auto;
+            outline: none;
+            cursor: pointer;
+          }
+
+          &:not(:first-child) {
+            margin-top: 2em;
+          }
+        }
+      }
+    }
+
+    &.flex-rev {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+.footer {
+  background-color: #fef8f4;
+  padding: 70px 70px 20px;
+  color: #616161;
+
+  .footerTop {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    h3 {
+      font-family: "Allura", cursive;
+      font-size: 3rem;
+      color: #d1ae32;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+
+      a {
+        color: #616161;
+        text-decoration: none;
+
+        &:hover {
+          color: #146eb4;
+        }
+
+        &:not(:first-child) {
+          margin-top: 1em;
+        }
+      }
+    }
+  }
+
+  .footerBottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3em;
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 20vh 0 0;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: -100vw;
+    z-index: 5;
+    transition: 0.3s all ease;
+
+    .navRight {
+      margin-top: 20vh;
+
+      .navLinks {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 2em;
+        text-align: center;
+
+        a {
+          color: #000;
+          text-decoration: none;
+
+          &:hover {
+            color: #146eb4;
+          }
+        }
+      }
+    }
+
+    &.open {
+      left: 0;
+    }
+  }
+
+  .mobileNavbar {
+    position: relative;
+    display: block;
+    height: 10vh;
+    padding: 25px;
+    z-index: 7;
+
+    i {
+      font-size: 1.3rem;
+      cursor: pointer;
+    }
+  }
+
+  main {
+    section {
+      .heading {
+        font-size: 2rem;
+      }
+
+      .smallHeading {
+        font-size: 1.5rem;
+      }
+
+      &.section1 {
+        flex-direction: column-reverse;
+        margin: 0 20px;
+
+        .left {
+          margin: 2em 0 0;
+
+          .text {
+            margin-top: 1em;
+          }
+        }
+
+        .right {
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+
+      &.section2 {
+        padding: 50px 20px;
+
+        .featuresList {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-column-gap: 2em;
+          grid-row-gap: 4em;
+
+          .singleFeature {
+            i {
+              font-size: 2.2rem;
+            }
+
+            .numbers {
+              font-size: 2.3rem;
+              margin-top: 0.2em;
+            }
+
+            .title {
+              font-size: 1.1rem;
+            }
+
+            &:not(:first-child) {
+              margin-top: 0;
+            }
+          }
+        }
+      }
+
+      &.section3 {
+        background-color: #fef8f4;
+        padding: 50px 20px;
+
+        .specsList {
+          grid-template-columns: repeat(1, 1fr);
+          grid-row-gap: 3.5em;
+          margin: 3.5em 0 0;
+
+          .singleSpec {
+            i {
+              font-size: 2rem;
+            }
+
+            .title {
+              margin-top: 0.7em;
+              font-size: 1.3rem;
+            }
+
+            .text {
+              margin-top: 0.5em;
+            }
+          }
+        }
+      }
+
+      &.section4 {
+        padding: 50px 20px;
+
+        .heading {
+          font-size: 2rem;
+        }
+
+        .text {
+          margin-top: 0.5em;
+        }
+
+        .buttons {
+          display: flex;
+          flex-direction: column;
+          margin-top: 1.5em;
+
+          button {
+            font-size: 0.9rem;
+
+            &:not(:first-child) {
+              margin: 1em 0 0 0;
+            }
+          }
+        }
+      }
+
+      &.section5 {
+        padding: 50px 20px 30px;
+
+        form {
+          margin-top: 1em;
+
+          .inputGroup {
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 1em;
+
+            &.twoInputs {
+              grid-template-columns: repeat(1, 1fr);
+            }
+
+            button {
+              width: 100%;
+            }
+
+            &:not(:first-child) {
+              margin-top: 1em;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    padding: 70px 20px 20px;
+
+    .footerTop {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1em;
+      grid-row-gap: 2em;
+
+      h3 {
+        font-size: 2.3rem;
+      }
+
+      div {
+        a {
+          font-size: 0.9em;
+
+          &:hover {
+            color: #146eb4;
+          }
+
+          &:not(:first-child) {
+            margin-top: 0.7em;
+          }
+        }
+      }
+    }
+
+    .footerBottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      div:last-child {
+        margin-top: 1em;
+      }
+    }
+  }
+}
